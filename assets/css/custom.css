@@ -230,4 +230,10 @@
   .right-box {
     margin: 0;
   }
+  .header .logo img {
+    margin: 0 15px;
+  }
+  .navbar {
+    margin: 0 15px;
+  }
 }
