@@ -32,13 +32,14 @@
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/banner.css" rel="stylesheet" />
   <link href="assets/css/custom.css" rel="stylesheet" />
-  <link href="assets/css/neomorphism.css" rel="stylesheet" />
 </head>
 
 <body>
   <!-- ======= Header ======= -->
   <section id="topbar" class="topbar">
-
+    <div class="topbar-container">
+      hello
+    </div>
   </section>
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -381,14 +382,14 @@
     <section id="memberships" class="memberships">
       <div class="container" data-aos="fade-up">
         <div class="row">
-          <div class="col-xl-6 d-flex content">
+          <div class="col-xl-6 d-flex content mb-3">
             <div class="row left-box">
-              <div class="col-4">
+              <div class="col-lg-4 col-sm-12">
                 <div class="trust-img-content">
                   <img src="assets/img/Saly-1.png" alt="">
                 </div>
               </div>
-              <div class="col-8">
+              <div class="col-lg-8 col-sm-12">
                 <div class="trust-content">
                   <h3>Trust And Safety</h3>
                   <p>
@@ -402,25 +403,25 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-6 d-flex content">
+          <div class="col-xl-6 d-flex content mb-3">
             <div class="row right-box">
-              <div class="col-4">
+              <div class="col-lg-4 col-sm-12">
                 <div class="plans-img-content">
                   <img src="assets/img/ProfilePic.svg" alt="">
                   <button>See More Details</button>
                 </div>
               </div>
-              <div class="col-8">
+              <div class="col-lg-8 col-sm-12">
                 <div class="plans-content">
                   <h3>Membership Plans</h3>
                   <p>
                     Choose from one of our membership plans and unlock features you need.
                   </p>
-                  <div>
+                  <div class="plans-type">
                     <img src="assets/img/gold.svg" alt="Gold"> <span>Gold</span>
                   </div>
-                  <div> <img src="assets/img/silver.svg" alt="Silver"> <span>Silver</span> </div>
-                  <div> <img src="assets/img/bronze.svg" alt="Bronze"> <span>Bronze</span> </div>
+                  <div class="plans-type"> <img src="assets/img/silver.svg" alt="Silver"> <span>Silver</span> </div>
+                  <div class="plans-type"> <img src="assets/img/bronze.svg" alt="Bronze"> <span>Bronze</span> </div>
                   <img class="mt-4" src="assets/img/Millionare.png" alt="Millionare">
                 </div>
               </div>
@@ -549,13 +550,27 @@
 
       <div class="container">
         <div class="copyright">
-          &copy; Copyright <strong><a href="http://asterinnovations.com"><span>Aster Innovations (Pvt) Ltd.</span></a></strong>. All Rights Reserved
+          &copy; Copyright <strong><a href="http://asterinnovations.com"><span>Aster Innovations (Pvt)
+                Ltd.</span></a></strong>. All Rights Reserved
         </div>
 
       </div>
     </footer>
     <!-- End Footer -->
+    <script>
+      window.onscroll = function () { myFunction() };
 
+      var header = document.getElementById("header");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("banner-sticky");
+        } else {
+          header.classList.remove("banner-sticky");
+        }
+      }
+    </script>
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 
@@ -570,7 +585,6 @@
 
     <!--  Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/neoscript.js"></script>
 </body>
 
 </html>

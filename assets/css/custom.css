@@ -1,7 +1,13 @@
 .topbar {
+  width: 100%;
+  position: fixed;
+  top: -60px;
+}
+.topbar-container {
   background: url(../img/Headroof.svg) no-repeat;
-  padding-bottom: 0;
-  margin-bottom: -5px;
+  width: 100%;
+  background-size: cover;
+  color: transparent;
 }
 
 .main-content button {
@@ -14,9 +20,14 @@
   height: 50px;
   border: none;
 }
+
 .main-content .main-content__title button:hover {
   transition: ease-in-out 0.3s;
   transform: scale(0.9);
+}
+.banner-container-fluid {
+  padding-top: 0;
+  margin-top: 25px;
 }
 .offer .offer-content {
   line-height: 35px;
@@ -46,6 +57,13 @@
   max-width: 100%;
   margin-right: 20px;
   margin-top: 35px;
+}
+.memberships .plans-content .plans-type {
+  display: flex;
+  align-items: center;
+}
+.memberships .plans-content .plans-type span {
+  margin: 7px 0 0 5px;
 }
 .memberships .trust-content h3 {
   font-family: "Work SansMedium";
@@ -145,7 +163,7 @@
   color: #00b4f5;
 }
 .footer .newsletter-form {
-  width: 320px;
+  max-width: 320px;
 }
 .footer .newsletter-form button {
   margin-left: -34px !important;
@@ -184,6 +202,7 @@
   padding: 0 0 0 15px;
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
 }
 .footer .quick-links ul li a {
   color: rgba(0, 0, 0, 0.7);
@@ -192,4 +211,20 @@
   transition: ease-in-out 0.2s;
   text-decoration: underline;
   color: #00b4f5;
+}
+@media screen and (max-width: 991px) {
+  .memberships .trust-img-content,
+  .memberships .plans-img-content,
+  .memberships .plans-img-content {
+    width: 200px;
+    /* margin: 0 auto;
+    display: flex;
+    flex-direction: column; */
+  }
+}
+@media screen and (max-width: 575px) {
+  .left-box,
+  .right-box {
+    margin: 0;
+  }
 }
