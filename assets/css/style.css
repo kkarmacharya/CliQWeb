@@ -29,10 +29,8 @@ a:hover {
   transform: scale(0.9);
 }
 button:hover {
-  transition: ease-in-out 0.3s;
+  transition: all 0.4s ease 0s;
   transform: scale(0.9);
-  box-shadow: 0px 4px 4px rgba(26, 105, 146, 0.1),
-    inset 4px 1px 4px rgba(26, 105, 146, 0.2);
 }
 h1,
 h2,
@@ -1026,8 +1024,9 @@ section {
   padding: 40px 20px;
   background: #fff;
   text-align: center;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  border-radius: 4px;
+  box-shadow: 0px 10px 20px rgba(42, 103, 146, 0.12),
+    inset 2px 2px 14px rgba(238, 243, 255, 0.75), inset -4px -4px 8px #dfe6f5;
+  border-radius: 50px;
   position: relative;
   overflow: hidden;
   transition: 0.3s;
@@ -1046,7 +1045,7 @@ section {
 
 .pricing .price {
   font-size: 36px;
-  color: #444444;
+  color: #d739d6;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
@@ -1090,19 +1089,29 @@ section {
   display: inline-block;
   padding: 8px 40px 10px 40px;
   border-radius: 50px;
-  color: #4154f1;
+  color: #ffffff;
   transition: none;
   font-size: 16px;
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-  border: 1px solid #4154f1;
+  background: #00b4f5;
+  box-shadow: 0px 10px 20px rgb(187 205 224 / 30%),
+    inset 4px 4px 8px rgb(215 215 215 / 25%),
+    inset -8px -8px 12px rgb(35 35 35 / 25%);
+  border-radius: 16px;
 }
 
 .pricing .btn-buy:hover {
-  background: #4154f1;
+  background: #00b4f5;
   color: #fff;
+}
+.pricing .btn-buy:active {
+  background: #00b4f5;
+  box-shadow: 0px 4px 4px rgba(26, 105, 146, 0.1),
+    inset 4px 1px 4px rgba(26, 105, 146, 0.2);
+  border-radius: 16px;
 }
 
 .pricing .featured {
@@ -1114,7 +1123,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #4154f1;
+  background: #00b4f5;
   color: #fff;
 }
 
@@ -1678,19 +1687,34 @@ section {
 --------------------------------------------------------------*/
 .contact .info-box {
   color: #444444;
-  background: #fafbff;
-  padding: 30px;
+
+  border-radius: 24px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgb(42 103 146 / 12%),
+    inset 2px 2px 14px rgb(238 243 255 / 75%), inset -4px -4px 8px #dfe6f5;
+  border-radius: 30px;
 }
 
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #4154f1;
+  background: -webkit-linear-gradient(
+    270deg,
+    #00b4f5 -0.11%,
+    #4f86f8 15.45%,
+    #5967d6 34.2%,
+    #9856e8 66.02%,
+    #d739d6 84.78%,
+    #ff00ea 97.72%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #012970;
+  color: #00b4f5;
   font-weight: 700;
   margin: 20px 0 10px 0;
 }
@@ -1703,9 +1727,12 @@ section {
 }
 
 .contact .php-email-form {
-  background: #fafbff;
+  background: #ffffff;
   padding: 30px;
   height: 100%;
+  box-shadow: 0px 10px 20px rgba(42, 103, 146, 0.12),
+    inset 2px 2px 14px rgba(238, 243, 255, 0.75), inset -4px -4px 8px #dfe6f5;
+  border-radius: 30px;
 }
 
 .contact .php-email-form .error-message {
@@ -1751,10 +1778,11 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
+  box-shadow: 0px 4px 4px rgba(26, 105, 146, 0.1),
+    inset 4px 1px 4px rgba(26, 105, 146, 0.2);
+  border-radius: 12px;
   font-size: 14px;
-  border-radius: 0;
+  border: none;
 }
 
 .contact .php-email-form input:focus,
@@ -1771,18 +1799,27 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #4154f1;
-  border: 0;
+  background: #00b4f5;
+  box-shadow: 0px 10px 20px rgb(187 205 224 / 30%),
+    inset 4px 4px 8px rgb(215 215 215 / 25%),
+    inset -8px -8px 12px rgb(35 35 35 / 25%);
+  border-radius: 16px;
+  border: none;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 4px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #5969f3;
+  background: #00b4f5;
+  /* transform: scale(0.8); */
 }
-
+.contact .php-email-form button[type="submit"]:active {
+  background: #00b4f5;
+  box-shadow: 0px 4px 4px rgb(26 105 146 / 10%),
+    inset 4px 1px 4px rgb(26 105 146 / 20%);
+  border-radius: 16px;
+}
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -2493,8 +2530,78 @@ section {
   font-size: 13px;
   color: #032f60;
 }
+
+.signup-container {
+  margin-top: 180px;
+}
+.signup-container h2 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.signup-container p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  width: 80%;
+  margin: 60px auto 10px auto;
+}
+.signup-container p a {
+  color: #00b4f5;
+  text-decoration: underline;
+}
+.signup-content img {
+  width: 200px;
+  height: auto;
+  position: absolute;
+}
+.signup-content h2 {
+  padding: 50px;
+  text-align: center;
+}
+.signup-content .signup-girl {
+  top: -130px;
+  left: 230px;
+}
+.signup-content .signup-boy {
+  top: -200px;
+  right: 160px;
+}
 @media screen and (max-width: 991px) {
   .navbar .active {
     padding: 0 20px;
+  }
+  .signup-content img {
+    width: 130px;
+  }
+  .signup-container {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+  .signup-content .signup-girl {
+    top: -80px;
+    left: 80px;
+  }
+  .signup-content .signup-boy {
+    top: -110px;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .signup-content .signup-girl {
+    top: -50px;
+    left: 60px;
+  }
+  .signup-content img {
+    width: 90px;
+  }
+  .signup-content .signup-boy {
+    top: -70px;
   }
 }

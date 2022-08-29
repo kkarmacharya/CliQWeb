@@ -10,12 +10,12 @@
   color: transparent;
 }
 
-.main-content button {
+.main-content a {
   background: #ffffff;
   box-shadow: 0px 10px 20px rgb(42 103 146 / 12%),
     inset 2px 2px 4px rgb(238 243 255 / 75%), inset -4px -4px 8px #dfe6f5;
-  border-radius: 16px;
-  padding: 0px 40px;
+  border-radius: 15px;
+  padding: 12px 40px;
   color: #00b4f5;
   height: 50px;
   border: none;
@@ -49,6 +49,7 @@
   /* opacity: 0.8; */
   box-shadow: 32px 32px 100px rgba(30, 39, 51, 0.2);
   backdrop-filter: blur(21.7463px);
+  -webkit-backdrop-filter: blur(21.7463px);
   border-radius: 42px;
   align-items: flex-start;
 }
@@ -84,22 +85,7 @@
 .memberships .trust-content img {
   width: 300px;
 }
-.memberships .plans-img-content button {
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgb(42 103 146 / 12%),
-    inset 2px 2px 4px rgb(238 243 255 / 75%), inset -4px -4px 8px #dfe6f5;
-  border-radius: 16px;
-  padding: 10px 20px;
-  color: #00b4f5;
-  border: none;
-  font-size: 14px;
-  min-width: 100px;
-  margin-top: 20px;
-}
-.memberships .plans-img-content button:focus {
-  box-shadow: 0px 4px 4px rgba(26, 105, 146, 0.1),
-    inset 4px 1px 4px rgba(26, 105, 146, 0.2);
-}
+
 .memberships .plans-content h3 {
   font-family: "Work SansMedium";
   font-style: normal;
@@ -212,6 +198,38 @@
   text-decoration: underline;
   color: #00b4f5;
 }
+.membership-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.membership-banner img {
+  width: 100%;
+  height: auto;
+}
+.primary-btn {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgb(42 103 146 / 12%),
+    inset 2px 2px 4px rgb(238 243 255 / 75%), inset -4px -4px 8px #dfe6f5;
+  border-radius: 16px;
+  padding: 12px 20px;
+  color: #00b4f5;
+  border: none;
+  font-size: 14px;
+  min-width: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  color: #00b4f5;
+  transform: scale(0.9);
+  transition: all 0.4s ease 0s;
+}
+.primary-btn:active {
+  box-shadow: 0px 4px 4px rgba(26, 105, 146, 0.1),
+    inset 4px 1px 4px rgba(26, 105, 146, 0.2);
+}
+
 @media screen and (max-width: 991px) {
   .memberships .trust-img-content,
   .memberships .plans-img-content,
