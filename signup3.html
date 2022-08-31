@@ -74,36 +74,45 @@
 
 
 
-     
+
         <section id="contact" class="container-fluid banner-container-fluid  contact pt-5">
 
             <div class="container" data-aos="fade-up">
 
-                <div class="row gy-4 signup-container justify-content-center">
+                <div class="row gy-4 justify-content-center">
+
                     <div class="col-md-12 col-lg-9 ">
                         <form action="" method="post" class="php-email-form">
-                            <div class="row gy-4">
-                                <div class="col-md-12 signup-content">
-                                    <!-- <img src="assets/img/signupgirl.png" alt="" class="signup-girl"> -->
-                                    <img src="assets/img/birthdaygirl.png" alt="" class="birthday-girl">
-                                    <h2>Declaration II (Age)</h2>
-                                  
-                                </div>
-                                <div class="row gy-4 justify-content-center">
-                                    <div class="col-md-6">
-                                        <label for="">Enter your Birth Date</label>
-                                        <input type="date" name="name" class="form-control" placeholder="Your Name"
-                                            required>
-                                            <div class="my-5">
-                                                <a href="signup2.html" class="secondary-btn me-3">Verify</a>
-                                               
-                                              <button class="primary-btn">Cancel</button>
-                                            </div>
+                            <div class="row gy-4 justify-content-center">
+
+                                <div class="col-md-8 otp-input my-5 text-center">
+                                    <h4 class=" ">Verify Phone Number
+
+                                    </h4>
+                                    <p>A 6 digit code was sent to <span>(+977)-98******84</span>. Please enter it below.
+                                    </p>
+                                    <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                                    <input type="text" id="digit-2" name="digit-2" data-next="digit-3"
+                                        data-previous="digit-1" />
+                                    <input type="text" id="digit-3" name="digit-3" data-next="digit-4"
+                                        data-previous="digit-2" />
+                                    <input type="text" id="digit-4" name="digit-4" data-next="digit-5"
+                                        data-previous="digit-3" />
+                                    <input type="text" id="digit-5" name="digit-5" data-next="digit-6"
+                                        data-previous="digit-4" />
+                                    <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
+                                    <div class="my-5">
+                                        <a href="signup4.html" class="secondary-btn me-3">Continue</a>
                                     </div>
-
-                                  
+                                    <i class="fa fa-info"></i> <label class="bottom-label " for="">Waiting for the code?
+                                        You will be able to request a new one in <span>60</span> seconds.</label>
 
                                 </div>
+                                <!-- <div class="col-md-5">
+                                    <i class="fa fa-info"></i> <a href="">resend</a>
+                                    <a href="">Exit</a>
+                                </div> -->
+
 
                         </form>
 
@@ -114,41 +123,44 @@
             </div>
 
         </section>
-         <!-- App Store Section -->
-    <section id="appstore" class="appstore">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6 appstore-illustration">
-            <img src="assets/img/appstoreArt.png" class="img-fluid" alt="">
-            <img src="assets/img/globe.gif" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
-            <div class="row">
-              <div class="col-12">
-                <header class="section-header">
-                  <p>Download App <span>CLiQ</span></p>
-                  <p class="header-desc">
-                    We believe our app will find the most compatible and connected CLiQ’ed partners so, if you are ready
-                    for us then let us help you find your love you are looking for through our app.
-                  </p>
-                </header>
-              </div>
-              <div class="col-12">
-                <a href="http://asterinnovations.com" target="_blank">
-                  <button class="appstorebtn"><img src="assets/img/applestore.png" alt="appstore"></button>
-                </a>
-                <a href="http://asterinnovations.com" target="_blank">
-                  <button class="appstorebtn"><img src="assets/img/googlestore.png" alt="googlestore"></button>
-                </a>
-              </div>
+        <!-- App Store Section -->
+        <section id="appstore" class="appstore">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-6 appstore-illustration">
+                        <img src="assets/img/appstoreArt.png" class="img-fluid" alt="">
+                        <img src="assets/img/globe.gif" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+                        <div class="row">
+                            <div class="col-12">
+                                <header class="section-header">
+                                    <p>Download App <span>CLiQ</span></p>
+                                    <p class="header-desc">
+                                        We believe our app will find the most compatible and connected CLiQ’ed partners
+                                        so, if you are ready
+                                        for us then let us help you find your love you are looking for through our app.
+                                    </p>
+                                </header>
+                            </div>
+                            <div class="col-12">
+                                <a href="http://asterinnovations.com" target="_blank">
+                                    <button class="appstorebtn"><img src="assets/img/applestore.png"
+                                            alt="appstore"></button>
+                                </a>
+                                <a href="http://asterinnovations.com" target="_blank">
+                                    <button class="appstorebtn"><img src="assets/img/googlestore.png"
+                                            alt="googlestore"></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- / row -->
+
             </div>
-          </div>
 
-        </div> <!-- / row -->
-
-      </div>
-
-    </section><!-- End App Store Section -->
+        </section><!-- End App Store Section -->
 
 
         <!-- ======= Footer ======= -->

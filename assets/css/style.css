@@ -1798,7 +1798,8 @@ section {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type="submit"],
+.secondary-btn {
   background: #00b4f5;
   box-shadow: 0px 10px 20px rgb(187 205 224 / 30%),
     inset 4px 4px 8px rgb(215 215 215 / 25%),
@@ -1809,16 +1810,29 @@ section {
   color: #fff;
   transition: 0.4s;
 }
-
+.secondary-btn:hover {
+  transform: scale(0.9);
+  color: #ffffff;
+}
 .contact .php-email-form button[type="submit"]:hover {
   background: #00b4f5;
   /* transform: scale(0.8); */
 }
-.contact .php-email-form button[type="submit"]:active {
+.contact .php-email-form button[type="submit"]:active,
+.secondary-btn:active {
   background: #00b4f5;
   box-shadow: 0px 4px 4px rgb(26 105 146 / 10%),
     inset 4px 1px 4px rgb(26 105 146 / 20%);
   border-radius: 16px;
+}
+.contact h4 {
+  font-family: "Work SansMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -2535,7 +2549,7 @@ section {
   margin-top: 180px;
 }
 .signup-container h2 {
-  font-family: "Work Sans";
+  font-family: "Work SansMedium";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -2572,6 +2586,43 @@ section {
 .signup-content .signup-boy {
   top: -200px;
   right: 160px;
+}
+.signup-content .birthday-girl {
+  right: 250px;
+  top: -100px;
+}
+.bottom-label {
+  font-size: 12px;
+  color: rgb(0, 0, 0, 0.4);
+}
+.otp-input input {
+  width: 40px;
+  margin-right: 5px;
+}
+.otp-input h4 {
+  font-family: "Work SansMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
+}
+.otp-input label span {
+  color: #d739d6;
+}
+.form-select {
+  box-shadow: 0px 10px 20px rgba(42, 103, 146, 0.12),
+    inset 2px 2px 4px rgba(238, 243, 255, 0.75), inset -4px -4px 8px #dfe6f5;
+  border-radius: 14px;
+  border: none;
+  height: 41px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.form-select:focus {
+  border: none;
+  box-shadow: 0px 10px 20px rgba(42, 103, 146, 0.12),
+    inset 2px 2px 4px rgba(238, 243, 255, 0.75), inset -4px -4px 8px #dfe6f5;
 }
 @media screen and (max-width: 991px) {
   .navbar .active {
