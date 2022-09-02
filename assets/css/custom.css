@@ -19,10 +19,14 @@
   color: #00b4f5;
   height: 50px;
   border: none;
+  display: inline-block;
 }
-
+.main-content a:hover {
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
 .main-content .main-content__title button:hover {
-  transition: ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out;
   transform: scale(0.9);
 }
 .banner-container-fluid {
@@ -219,17 +223,62 @@
   min-width: 100px;
   margin-top: 20px;
   cursor: pointer;
+  display: inline-block;
 }
 .primary-btn:hover {
   color: #00b4f5;
   transform: scale(0.9);
-  transition: all 0.4s ease 0s;
+  transition: all 0.3s ease-in-out;
 }
 .primary-btn:active {
   box-shadow: 0px 4px 4px rgba(26, 105, 146, 0.1),
     inset 4px 1px 4px rgba(26, 105, 146, 0.2);
 }
+.offer-content ul li {
+  position: relative;
+  padding-left: 10px;
+  margin-top: 30px;
+  line-height: 20px;
+}
+.offer-content ul li::marker {
+  color: #ffffff;
+  font-family: "Work SansMedium";
+}
+.offer-content ul li::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: -5px;
+  left: -28px;
+  background: -webkit-linear-gradient(
+    270deg,
+    #00b4f5 -0.11%,
+    #4f86f8 15.45%,
+    #5967d6 34.2%,
+    #9856e8 66.02%,
+    #d739d6 84.78%,
+    #ff00ea 97.72%
+  );
 
+  border-radius: 50%;
+  z-index: -1;
+}
+.card {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgb(42 103 146 / 12%),
+    inset 2px 2px 4px rgb(238 243 255 / 75%), inset -4px -4px 8px #dfe6f5;
+  border-radius: 16px;
+  border: none;
+}
+.signup-complete img {
+  width: 250px;
+  margin: 0 auto;
+}
+.action-btns {
+  padding: 20px 0;
+}
 @media screen and (max-width: 991px) {
   .memberships .trust-img-content,
   .memberships .plans-img-content,

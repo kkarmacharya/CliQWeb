@@ -76,79 +76,243 @@
 
 
         <section class="container-fluid banner-container-fluid  contact pt-5">
-
             <div class="container" data-aos="fade-up">
-
                 <div class="row gy-4  justify-content-center">
                     <div class="col-md-12 col-lg-9 ">
-                        <form action="" method="post" class="php-email-form">
-                            <div class="row gy-4 justify-content-between ">
-                                <div class="mt-5 mb-3 d-flex justify-content-between">
-                                    <h4>Let’s Get to Know You.</h4>
-                                    <p>1 of 3</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="">Nick Name <span>*</span></label>
-                                    <input type="text" name="name" class="form-control" placeholder="Enter Nick Name"
-                                        required>
+                        <form id="regForm" action="/action_page.php" class="cliq-form">
+                            <!-- One "tab" for each step in the form: -->
+                            <div class="tab">
+                                <div class="row gy-4 justify-content-between ">
+                                    <div class="mt-5 mb-3 d-flex justify-content-between">
+                                        <h4>Let’s Get to Know You.</h4>
+                                        <p>1 of 3</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Nick Name <span>*</span></label>
+                                        <input type="text" name="name" class="form-control"
+                                            placeholder="Enter Short Name / Alias" required>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Date of Birth <span>*</span></label>
+                                        <input type="date" name="name" class="form-control" placeholder="DOB" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Age <span>*</span></label>
+                                        <input type="text" name="name" class="form-control" placeholder="-" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="">Gender <span>*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Marital Status <span>*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Permanent Residence <span>*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select Country</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Interested In <span>*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
 
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="">Date of Birth <span>*</span></label>
-                                    <input type="date" name="name" class="form-control" placeholder="DOB" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="">Age <span>*</span></label>
-                                    <input type="text" name="name" class="form-control" placeholder="Age" required>
-                                </div>
+                            </div>
+                            <div class="tab">
+                                <div class="row gy-4 justify-content-between ">
+                                    <div class="mt-5 mb-3 d-flex justify-content-between">
+                                        <h4>Let’s Get to Know You.</h4>
+                                        <p>2 of 3</p>
+                                    </div>
 
-                                <div class="col-md-6">
-                                    <label for="">Gender <span>*</span></label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Select Gender</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
-                                        <option value="3">Other</option>
-                                    </select>
+                                    <div class="col-md-6">
+                                        <label for="">Height </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="">Ethnicity </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Education </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Language </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Zodiac Sign</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Religion </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Gotra </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Occupation </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="">Marital Status <span>*</span></label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Select Marital Status</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
-                                        <option value="3">Other</option>
-                                    </select>
+                            </div>
+                            <div class="tab">
+                                <div class="row gy-4 justify-content-between ">
+                                    <div class="mt-5 mb-3 d-flex justify-content-between">
+                                        <h4>Let’s Get to Know You.</h4>
+                                        <p>3 of 3</p>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="">Smoking Habbit </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="">Alcohol Habbit </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Cannabis Habbit </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select </option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Physical Status </label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Zodiac Sign</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Select</option>
+                                            <option value="1">Male</option>
+                                            <option value="2">Female</option>
+                                            <option value="3">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="">Describe Yourself</label>
+                                        <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                            required=""></textarea>
+                                    </div>
+
+
+
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="">Permanent Residence <span>*</span></label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Select Permanent Residence</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
-                                        <option value="3">Other</option>
-                                    </select>
+                            </div>
+                            <div class="tab">
+                                <div class="signup-complete p-5 text-center">
+                                    <img src="assets/img/complete.gif" alt="">
+                                    <p>You have successfully signed up in CLiQ Community !</p>
+                                    <h4>Please check your email and SMS or scan the QR code below <br> to install the
+                                        app in your mobile phone.</h4>
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="">Interested In <span>*</span></label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Select Interested In</option>
-                                        <option value="1">Male</option>
-                                        <option value="2">Female</option>
-                                        <option value="3">Other</option>
-                                    </select>
+                            </div>
+                            <div style="overflow:auto;" class="action-btns">
+                                <div style="float:right;">
+                                    <button type="button" id="prevBtn" onclick="nextPrev(-1)"
+                                        class="primary-btn">Back</button>
+                                    <button type="button" id="nextBtn" onclick="nextPrev(1)"
+                                        class="secondary-btn">Continue</button>
                                 </div>
-                                <div class="my-5">
-                                    <a href="signup6.html" class="secondary-btn me-3">Continue</a>
-                                </div>
+                            </div>
+                            <!-- Circles which indicates the steps of the form: -->
+                            <div style="text-align:center;margin-top:40px; display: none;">
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                            </div>
                         </form>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
         <!-- App Store Section -->
         <section id="appstore" class="appstore">
@@ -303,7 +467,7 @@
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
         <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/cliq-form/validate.js"></script>
 
         <!--  Main JS File -->
         <script src="assets/js/main.js"></script>

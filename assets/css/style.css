@@ -1710,6 +1710,7 @@ section {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: block;
 }
 
 .contact .info-box h3 {
@@ -1726,7 +1727,7 @@ section {
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+.contact .cliq-form {
   background: #ffffff;
   padding: 30px;
   height: 100%;
@@ -1734,8 +1735,10 @@ section {
     inset 2px 2px 14px rgba(238, 243, 255, 0.75), inset -4px -4px 8px #dfe6f5;
   border-radius: 30px;
 }
-
-.contact .php-email-form .error-message {
+.cliq-form label span {
+  color: #d739d6;
+}
+.contact .cliq-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1745,7 +1748,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .sent-message {
+.contact .cliq-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1755,7 +1758,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .cliq-form .loading {
   display: none;
   background: #fff;
   text-align: center;
@@ -1763,7 +1766,7 @@ section {
   margin-bottom: 24px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .cliq-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1776,8 +1779,8 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .cliq-form input,
+.contact .cliq-form textarea {
   box-shadow: 0px 4px 4px rgba(26, 105, 146, 0.1),
     inset 4px 1px 4px rgba(26, 105, 146, 0.2);
   border-radius: 12px;
@@ -1785,20 +1788,20 @@ section {
   border: none;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .cliq-form input:focus,
+.contact .cliq-form textarea:focus {
   border-color: #4154f1;
 }
 
-.contact .php-email-form input {
+.contact .cliq-form input {
   padding: 10px 15px;
 }
 
-.contact .php-email-form textarea {
+.contact .cliq-form textarea {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type="submit"],
+.contact .cliq-form button[type="submit"],
 .secondary-btn {
   background: #00b4f5;
   box-shadow: 0px 10px 20px rgb(187 205 224 / 30%),
@@ -1809,16 +1812,17 @@ section {
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
+  display: inline-block;
 }
 .secondary-btn:hover {
   transform: scale(0.9);
   color: #ffffff;
 }
-.contact .php-email-form button[type="submit"]:hover {
+.contact .cliq-form button[type="submit"]:hover {
   background: #00b4f5;
   /* transform: scale(0.8); */
 }
-.contact .php-email-form button[type="submit"]:active,
+.contact .cliq-form button[type="submit"]:active,
 .secondary-btn:active {
   background: #00b4f5;
   box-shadow: 0px 4px 4px rgb(26 105 146 / 10%),
@@ -2578,6 +2582,7 @@ section {
 .signup-content h2 {
   padding: 50px;
   text-align: center;
+  font-size: 24px;
 }
 .signup-content .signup-girl {
   top: -130px;
@@ -2624,6 +2629,12 @@ section {
   box-shadow: 0px 10px 20px rgba(42, 103, 146, 0.12),
     inset 2px 2px 4px rgba(238, 243, 255, 0.75), inset -4px -4px 8px #dfe6f5;
 }
+.signIn .input:nth-child(1)::before {
+  background-image: url(../img/Profilepic.svg);
+  width: 20px;
+  height: 20px;
+  top: 15px;
+}
 @media screen and (max-width: 991px) {
   .navbar .active {
     padding: 0 20px;
@@ -2655,4 +2666,67 @@ section {
   .signup-content .signup-boy {
     top: -70px;
   }
+}
+/* Stepper Form Start */
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.cliq-form .tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.cliq-form .step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #00b4f5;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.cliq-form .step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.cliq-form .step.finish {
+  background-color: #d739d6;
+}
+.cliq-form #prevBtn {
+  margin-right: 10px;
+}
+/* Stepper Form End */
+.payment-methods {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgb(42 103 146 / 12%),
+    inset 2px 2px 4px rgb(238 243 255 / 75%), inset -4px -4px 8px #dfe6f5;
+  border-radius: 20px;
+  padding: 40px;
+}
+.payment-methods button {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgb(42 103 146 / 12%),
+    inset 2px 2px 4px rgb(238 243 255 / 75%), inset -4px -4px 8px #dfe6f5;
+  border-radius: 20px;
+  padding: 0px 20px;
+  color: #00b4f5;
+  height: 50px;
+  width: 100%;
+  border: none;
+  text-align: left;
+}
+.payment-methods button img {
+  height: 30px;
+  width: auto;
+  margin-right: 10px;
+}
+.payment-methods select {
+  width: 20%;
+  color: rgba(0, 0, 0, 0.7);
 }
