@@ -283,6 +283,9 @@
 .action-btns {
   padding: 20px 0;
 }
+.mt-80 {
+  margin-top: 80px;
+}
 @media screen and (max-width: 991px) {
   .memberships .trust-img-content,
   .memberships .plans-img-content,
