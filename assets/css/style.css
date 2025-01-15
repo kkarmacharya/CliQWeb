@@ -41,7 +41,7 @@ h6 {
   font-family: "Work Sans", sans-serif;
 }
 p {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
 }
 /*--------------------------------------------------------------
 # Sections
@@ -72,7 +72,7 @@ section {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
 }
 .section-header p {
   margin: 10px 0 0 0;
@@ -265,7 +265,7 @@ section {
   font-size: 18px;
   line-height: 60px;
   text-transform: capitalize;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -435,7 +435,7 @@ section {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
   font-family: "Work SansMedium";
 }
 
@@ -510,7 +510,7 @@ section {
   font-size: 22px;
   line-height: 26px;
   margin-top: 70px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .hero .btn-get-started {
@@ -1835,7 +1835,7 @@ section {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
   margin-bottom: 40px;
 }
 @-webkit-keyframes animate-loading {
@@ -2479,7 +2479,10 @@ section {
 .footer .footer-top .social-links a:hover {
   color: #012970;
 }
-
+.footer .footer-top .social-links a img {
+  width: 30px;
+    height: auto;
+}
 .footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
@@ -2558,7 +2561,7 @@ section {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
 }
 .signup-container p {
   font-style: normal;
@@ -2566,7 +2569,7 @@ section {
   font-size: 16px;
   line-height: 30px;
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
   width: 80%;
   margin: 60px auto 10px auto;
 }
@@ -2610,7 +2613,7 @@ section {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
   margin-bottom: 40px;
 }
 .otp-input label span {
@@ -2634,6 +2637,10 @@ section {
   width: 20px;
   height: 20px;
   top: 15px;
+}
+.privacy .section h3 {
+  font-size: 34px;
+  margin: 30px 0 20px 0;
 }
 @media screen and (max-width: 991px) {
   .navbar .active {
@@ -2728,5 +2735,5 @@ input.invalid {
 }
 .payment-methods select {
   width: 20%;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.85);
 }

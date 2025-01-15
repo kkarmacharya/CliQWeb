@@ -359,7 +359,7 @@
   background-color: var(--coral-bg);
 }
 .main-content .main-content__title {
-  font-size: 22px;
+  font-size: 18px;
 }
 @media screen and (max-width: 991px) {
   .banner-container-fluid {
